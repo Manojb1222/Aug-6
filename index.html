@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* .fan svg {
+            width: 200px;
+        } */
+        img {
+            width: 200px;
+        }
+
+        .fan {
+            text-align: center;
+            transition: all 1s ease;
+        }
+
+        .container {
+            height: 100vh;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            margin: 5px;
+        }
+
+        .item:hover {
+            cursor: pointer;
+        }
+
+        .item1:hover~.fan {
+            transform: translate(300px);
+        }
+
+        .item2:hover~.fan {
+            transform: rotate(360deg);
+        }
+
+        .item3:hover~.fan {
+            transform: scale(0.5);
+        }
+
+
+        .item4:hover~.fan {
+            transform: skew(25deg, 25deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+
+        <div class="fan">
+            <img src="https://www.svgrepo.com/show/503926/fan.svg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
